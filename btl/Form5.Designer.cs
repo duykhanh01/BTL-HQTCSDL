@@ -1,7 +1,7 @@
 ﻿
 namespace btl
 {
-    partial class Form5
+    partial class orderDetail
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,57 @@ namespace btl
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dbOrderDetail = new System.Windows.Forms.DataGridView();
+            this.btBackHome = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dbOrderDetail)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dbOrderDetail
+            // 
+            this.dbOrderDetail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dbOrderDetail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dbOrderDetail.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dbOrderDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dbOrderDetail.Location = new System.Drawing.Point(40, 125);
+            this.dbOrderDetail.Name = "dbOrderDetail";
+            this.dbOrderDetail.RowHeadersWidth = 51;
+            this.dbOrderDetail.RowTemplate.Height = 29;
+            this.dbOrderDetail.Size = new System.Drawing.Size(514, 140);
+            this.dbOrderDetail.TabIndex = 0;
+            this.dbOrderDetail.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dbOrderDetail_CellContentClick);
+            // 
+            // btBackHome
+            // 
+            this.btBackHome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btBackHome.Location = new System.Drawing.Point(234, 55);
+            this.btBackHome.Name = "btBackHome";
+            this.btBackHome.Size = new System.Drawing.Size(94, 29);
+            this.btBackHome.TabIndex = 1;
+            this.btBackHome.Text = "Quay lại";
+            this.btBackHome.UseVisualStyleBackColor = true;
+            this.btBackHome.Click += new System.EventHandler(this.btBackHome_Click);
+            // 
+            // orderDetail
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form5";
+            this.ClientSize = new System.Drawing.Size(600, 327);
+            this.Controls.Add(this.btBackHome);
+            this.Controls.Add(this.dbOrderDetail);
+            this.Name = "orderDetail";
+            this.Text = "Order Detail";
+            this.Load += new System.EventHandler(this.orderDetail_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dbOrderDetail)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dbOrderDetail;
+        private System.Windows.Forms.Button btBackHome;
     }
 }
