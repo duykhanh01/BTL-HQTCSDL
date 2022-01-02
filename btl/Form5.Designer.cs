@@ -31,6 +31,7 @@ namespace btl
         {
             this.dbOrderDetail = new System.Windows.Forms.DataGridView();
             this.btBackHome = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dbOrderDetail)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,11 +63,21 @@ namespace btl
             this.btBackHome.UseVisualStyleBackColor = true;
             this.btBackHome.Click += new System.EventHandler(this.btBackHome_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(386, 69);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(139, 29);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Thêm sản phẩm";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // orderDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 327);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btBackHome);
             this.Controls.Add(this.dbOrderDetail);
             this.Name = "orderDetail";
@@ -81,5 +92,6 @@ namespace btl
 
         private System.Windows.Forms.DataGridView dbOrderDetail;
         private System.Windows.Forms.Button btBackHome;
+        private System.Windows.Forms.Button button1;
     }
 }
