@@ -14,11 +14,7 @@ namespace btl
 {
     public partial class Form1 : Form
     {
-<<<<<<< HEAD
-        string link_k = @"Data Source=DESKTOP-R3U1CE5\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=ShopOnline";
-=======
         string link_H = @"Data Source=WIND\MSSQLSERVER01;Initial Catalog=shoponline;Integrated Security=True";
->>>>>>> 348f0777b9b2f820a46b8d375eee8faef6f62feb
         public Form1()
         {
             InitializeComponent();
@@ -34,26 +30,6 @@ namespace btl
         {
 
         }
-<<<<<<< HEAD
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnHienThiKH_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection(link_k);
-            con.Open();
-            String sql = "Select * from users";
-            SqlCommand com = new SqlCommand(sql, con);
-            com.CommandType = CommandType.Text;
-            SqlDataAdapter da = new SqlDataAdapter(com);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            con.Close();
-            bangKH.DataSource = dt;
-=======
        
         private void btShowOrder_Click(object sender, EventArgs e)
         {
@@ -134,7 +110,6 @@ namespace btl
         private void dbOrder_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
->>>>>>> 348f0777b9b2f820a46b8d375eee8faef6f62feb
         }
     }
 }
